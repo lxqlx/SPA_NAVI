@@ -15,6 +15,7 @@ using namespace std;
 
 namespace MYENUM {
     enum EXISTANCE {EXIST = -2, NOTEXIST = -3};
+	enum STATUS {SUCCESS, FAILED, FINISHED, WAITING};
 }
 
 typedef int STATEMENT;          // statement number
@@ -37,7 +38,10 @@ typedef vector<WHILESTMT> WHILESTMTLIST;            // while statement list type
 typedef vector<ASSIGNSTMT> ASSIGNSTMTLIST;          // assign statement list type
 typedef vector<CONSTANT> CONSTANTLIST;              // constant list
 typedef vector<STATEMENT> STMTLIST;                 // assign statement list type
+typedef vector<STATEMENT> IFLIST;					// if statement list type
+
 typedef vector<VARNAME> VARNAMETABLE;               // var name table type
+typedef vector<PROCNAME> PROCNAMETABLE;				// procedure name table type
 
 typedef vector<STMTLIST> PARENTTABLE;             // parent table stores STMTLIST
 typedef vector<STMTLIST> PARENTSTARTABLE_C;       // for child 

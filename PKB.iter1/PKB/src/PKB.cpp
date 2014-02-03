@@ -7,6 +7,7 @@ PKB::PKB() {
     assignStatementList = new ASSIGNSTMTLIST;
     constantList = new CONSTANTLIST;
     statementList = new STMTLIST;
+	ifList = new IFLIST;
 }
 
 PKB* PKB::instance() {
@@ -450,14 +451,8 @@ INDEX PKB::checkConstantList(const CONSTANT &c) {
 }
 
 /*
- * Call extractor after finished insert relationship to all tables
+ * for return requested lists
  */
-void PKB::callExtractor() {
-    FollowExtractor::instance()->buildFollowStarTable();
-    ParentExtractor::instance()->buildParentStarTable();
-}
-
-// for lists
 WHILESTMTLIST PKB::getWhilwStatementList() {
     return *whileStatementList;
 }
@@ -472,6 +467,10 @@ CONSTANTLIST PKB::getConstantList() {
 
 STMTLIST PKB::getStatementList() {
     return *statementList;
+}
+
+IFLIST PKB::getIfList() {
+	return *ifList;
 }
 
 VARNAMETABLE* PKB::getVarTable() {

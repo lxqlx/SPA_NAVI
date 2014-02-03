@@ -4,13 +4,11 @@
 #include <iostream>
 #include <vector>
 
-#include "MyTypeDef.h"
+#include "../../MyTypeDef.h"
 #include "Follow.h"
 #include "FollowStar.h"
-#include "FollowExtractor.h"
 #include "Parent.h"
 #include "ParentStar.h"
-#include "ParentExtractor.h"
 #include "Variable.h"
 #include "Modifies.h"
 #include "Uses.h"
@@ -50,8 +48,7 @@ public:
     void insertToConstantList(const CONSTANT &);
     INDEX checkConstantList(const CONSTANT &);                  // if not found return -1
 
-    // call extractor after finished insert relationship to all tables
-    void callExtractor();
+	// APIs for if list
 
     // *********************************************8
     // * for zhoubin and xiangqun, query evaluator
@@ -62,6 +59,7 @@ public:
     ASSIGNSTMTLIST getAssignmentStatementList();
     CONSTANTLIST getConstantList();
     STMTLIST getStatementList();
+	IFLIST getIfList();
 
     // APIs for variable table
     VARNAMETABLE VariableAll();
@@ -129,6 +127,6 @@ private:
     ASSIGNSTMTLIST* assignStatementList;    // assign statement list
     CONSTANTLIST* constantList;             // constant list
     STMTLIST* statementList;                // statement list
-
+	IFLIST* ifList;							// if list
 };
 #endif

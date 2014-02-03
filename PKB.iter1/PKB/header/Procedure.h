@@ -1,29 +1,31 @@
 #ifndef PROCEDURE_H_INCLUDED
 #define PROCEDURE_H_INCLUDED
 
-#include "MyTypeDef.h"
+//#define NDEBUG
+
+#include "../../MyTypeDef.h"
 #include <iostream>
+#include <cassert>
 
 using namespace std;
 
 class Procedure {
-
 public:
     Procedure();
     ~Procedure();
 
-    BOOLEAN insertProcedure(const STATEMENT &);
-    STATEMENT getProcedure(STATEMENT &);
+    INDEX insertProcname(const PROCNAME &);
+    SIZE getSize();
+    PROCNAME getProcName(const INDEX &);
+    INDEX getProcIndex(const PROCNAME &);
 
-    SIZE getProcedureTableSize();
-    PROCEDURETABLE* getProcedureTable();
-    BOOLEAN verifyWithStmtListSize(const STATEMENT &);
+    PROCNAMETABLE* getAllProcdures();
 
     static Procedure* instance();
 
 private:
-    PROCEDURETABLE *procedureTable; 
     static Procedure* _instance;
 
+    PROCNAMETABLE *procTable;
 };
 #endif

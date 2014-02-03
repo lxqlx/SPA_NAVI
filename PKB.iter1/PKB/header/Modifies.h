@@ -1,7 +1,7 @@
 #ifndef MODIFIES_H_INCLUDED
 #define MODIFIES_H_INCLUDED
 
-#include "MyTypeDef.h"
+#include "../../MyTypeDef.h"
 #include <iostream>
 #include <cassert>
 //#include NDEBUG

@@ -1,7 +1,7 @@
 #ifndef PARENTEXTRACTOR_H_INCLUDED
 #define PARENTEXTRACTOR_H_INCLUDED
 
-#include "MyTypeDef.h"
+#include "../../MyTypeDef.h"
 
 // include parent header
 #include "Parent.h"

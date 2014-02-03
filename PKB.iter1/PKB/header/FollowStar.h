@@ -1,7 +1,7 @@
 #ifndef FOLLOWSTAR_H_INCLUDED
 #define FOLLOWSTAR_H_INCLUDED
 
-#include "MyTypeDef.h"
+#include "../../MyTypeDef.h"
 #include <iostream>
 
 using namespace std;

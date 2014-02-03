@@ -1,7 +1,7 @@
 #ifndef PARENT_H_INCLUDED
 #define PARENT_H_INCLUDED
 
-#include "MyTypeDef.h"
+#include "../../MyTypeDef.h"
 //#include "Vector2d.h"
 #include <iostream>
 

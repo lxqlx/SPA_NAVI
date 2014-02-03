@@ -1,12 +1,3 @@
-//
-//  VaribaleTable.cpp
-//  CS3201
-//
-//  Created by Yu Fangzhou on 03/11/13.
-//  Copyright (c) 2013年 Yu Fangzhou. All rights reserved.
-//  edit by wulong at 04/11 15:11
-//
-
 #include "../header/Variable.h"
 
 Variable* Variable::_instance = NULL;

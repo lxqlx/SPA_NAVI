@@ -1,7 +1,7 @@
 #ifndef DESIGNEXTRACTOR_H_INCLUDED
 #define DESIGNEXTRACTOR_H_INCLUDED
 
-#include "MyTypeDef.h"
+#include "../../MyTypeDef.h"
 
 // include follow extractor header
 #include "FollowExtractor.h"
@@ -19,7 +19,9 @@ public:
 
     BOOLEAN extractPKBInfo();		// extract follow star relationship and parent star relationship
 
-private:
+	void setFinishedParsingSignal(STATUS);
 
+private:
+	STATUS status;
 };
 #endif

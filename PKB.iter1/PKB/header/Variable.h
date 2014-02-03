@@ -1,12 +1,3 @@
-//
-//  VaribaleTable.h
-//  CS3201
-//
-//  Created by Yu Fangzhou on 03/11/13.
-//  Copyright (c) 2013年 Yu Fangzhou. All rights reserved.
-//  edit by wulong at 04/11 15:11
-//
-
 #ifndef VARIABLE_H_INCLUDED
 #define VARIABLE_H_INCLUDED
 
@@ -14,7 +5,7 @@
 
 #include <iostream>
 #include <cassert>
-#include "MyTypeDef.h"
+#include "../../MyTypeDef.h"
 
 using namespace std;
 
@@ -37,4 +28,4 @@ private:
 
     VARNAMETABLE *varTable;
 };
-#endif /* defined(__CS3201__VaribaleTable__) */
+#endif

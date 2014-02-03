@@ -1,7 +1,7 @@
 #ifndef FOLLOWEXTRACTOR_H_INCLUDED
 #define FOLLOWEXTRACTOR_H_INCLUDED
 
-#include "MyTypeDef.h"
+#include "../../MyTypeDef.h"
 
 // include follow header
 #include "Follow.h"
