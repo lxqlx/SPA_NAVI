@@ -3,9 +3,18 @@
 *.lo
 *.o
 
+# VS2010 project files
+*.opensdf
+*.sdf
+*.sln
+*.vcxproj
+*.vcxproj.filters
+*.ipch
+
 # Compiled Dynamic libraries
 *.so
 *.dylib
+*.dll
 
 # Compiled Static libraries
 *.lai
