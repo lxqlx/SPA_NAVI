@@ -1,4 +1,4 @@
-#include "Modifies.h"
+#include "../header/Modifies.h"
 
 Modifies* Modifies::_instance = NULL;
 

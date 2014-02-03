@@ -1,4 +1,4 @@
-#include "FollowStar.h"
+#include "../header/FollowStar.h"
 #include <cmath>
 
 FollowStar* FollowStar::_instance = NULL;

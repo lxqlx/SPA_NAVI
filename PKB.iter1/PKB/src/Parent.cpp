@@ -1,4 +1,4 @@
-#include "Parent.h"
+#include "../header/Parent.h"
 #include <cmath>
 
 Parent* Parent::_instance = NULL;

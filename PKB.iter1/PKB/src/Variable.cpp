@@ -7,7 +7,7 @@
 //  edit by wulong at 04/11 15:11
 //
 
-#include "Variable.h"
+#include "../header/Variable.h"
 
 Variable* Variable::_instance = NULL;
 

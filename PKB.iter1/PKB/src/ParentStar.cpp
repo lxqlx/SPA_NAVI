@@ -1,4 +1,4 @@
-#include "ParentStar.h"
+#include "../header/ParentStar.h"
 #include <cmath>
 
 ParentStar* ParentStar::_instance = NULL;

@@ -1,4 +1,4 @@
-#include "ParentExtractor.h"
+#include "../header/ParentExtractor.h"
 
 ParentExtractor* ParentExtractor::_instance = NULL;
 

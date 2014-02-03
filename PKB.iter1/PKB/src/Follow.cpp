@@ -1,4 +1,4 @@
-#include "Follow.h"
+#include "../header/Follow.h"
 #include <cmath>
 
 Follow* Follow::_instance = NULL;

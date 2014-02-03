@@ -1,4 +1,4 @@
-#include "FollowExtractor.h"
+#include "../header/FollowExtractor.h"
 
 FollowExtractor* FollowExtractor::_instance = NULL;
 
