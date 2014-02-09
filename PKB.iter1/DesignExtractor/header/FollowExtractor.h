@@ -4,10 +4,10 @@
 #include "../../MyTypeDef.h"
 
 // include follow header
-#include "Follow.h"
+#include "../../PKB/header/Follow.h"
 
 // include follow star header
-#include "FollowStar.h"
+#include "../../PKB/header/FollowStar.h"
 
 #include <iostream>
 

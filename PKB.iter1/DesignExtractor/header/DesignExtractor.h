@@ -7,6 +7,8 @@
 #include "FollowExtractor.h"
 // include parent extractor header
 #include "ParentExtractor.h"
+// include call extractor header
+#include "CallExtractor.h"
 
 #include <iostream>
 
@@ -17,11 +19,9 @@ public:
     DesignExtractor();
     ~DesignExtractor();
 
-    BOOLEAN extractPKBInfo();		// extract follow star relationship and parent star relationship
-
-	void setFinishedParsingSignal(STATUS);
+    BOOLEAN extractPKBInfo();		// extract follow star relationship, call star rel and parent star relationship
 
 private:
-	STATUS status;
+
 };
 #endif

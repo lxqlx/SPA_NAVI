@@ -15,8 +15,21 @@ using namespace std;
 
 namespace MYENUM {
     enum EXISTANCE {EXIST = -2, NOTEXIST = -3};
-	enum STATUS {SUCCESS, FAILED, FINISHED, WAITING};
 }
+
+template <class T, class U>
+
+typedef struct PAIR {
+	T x; 
+	U y;
+	PAIR(T a, U b) : x(a), y(b) {}
+	T getX() {
+		return x;
+	}
+	U getY() {
+		return y;
+	}
+};
 
 typedef int STATEMENT;          // statement number
 typedef int SIZE;               // size of a container
@@ -25,9 +38,6 @@ typedef bool BOOLEAN;           // boolean type
 
 // For var table
 typedef string VARNAME;         // variable table name
-
-// For procedure table
-typedef string PROCNAME;        // procedure name
 
 // For modify, follows, parents table
 typedef int WHILESTMT;                  // while statement, <int> type
@@ -58,6 +68,14 @@ typedef vector<VARNAME> MODIFYLIST;               // for modify list
 typedef vector<MODIFYLIST> MODIFIESTABLE;         // for modifies table
 
 typedef vector<STMTLIST> FORMATEDLIST;            // formated list for follow star, parent star and parent return all situation
+
+// For procedure table
+typedef string PROCNAME;        // procedure name
+typedef vector<PROCNAME> PROCLIST;		  // procedure list
+typedef PAIR<PROCNAME, PROCLIST*> CALLREL;		  // define call relationship type
+typedef vector<CALLREL> CALLTABLE;						  // call table, two dimension string array
+typedef vector<CALLREL> CALLERTABLE;					  // caller table for call* relationship
+typedef vector<CALLREL> CALLEETABLE;					  // callee table for call* relationship
 
 struct PATTERNELEMENT {
     STATEMENT s;

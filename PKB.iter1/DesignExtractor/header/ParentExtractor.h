@@ -4,10 +4,10 @@
 #include "../../MyTypeDef.h"
 
 // include parent header
-#include "Parent.h"
+#include "../../PKB/header/Parent.h"
 
 // include parent star header
-#include "ParentStar.h"
+#include "../../PKB/header/ParentStar.h"
 
 #include <iostream>
 
